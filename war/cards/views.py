@@ -1,11 +1,11 @@
-from django.conf import settings
+# from django.conf import settings
 from django.contrib.auth.decorators import login_required
-from django.contrib.auth.forms import UserCreationForm
-from django.core.mail import EmailMultiAlternatives
-from django.http import HttpResponseRedirect
+# from django.contrib.auth.forms import UserCreationForm
+# from django.core.mail import EmailMultiAlternatives
+# from django.http import HttpResponseRedirect
 from django.shortcuts import render, redirect
-from cards.forms import EmailUserCreationForm
-from cards.models import Card, WarGame
+from forms import EmailUserCreationForm
+from models import Card, WarGame
 
 
 def home(request):
