@@ -96,7 +96,7 @@ class FormTestCase(TestCase):
 class ViewTestCase(TestCase):
           def setUp(self):
               create_deck()
-    
+
           def test_faq_page(self):
               response = self.client.get(reverse('faq'))
               self.assertIn('<p>Q: Can I win real money on this website?</p>', response.content)
